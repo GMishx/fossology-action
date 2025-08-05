@@ -83,6 +83,7 @@ runs:
     GITHUB_REPO_URL: ${{ inputs.github_repo_url }}
     GITHUB_REPO_OWNER: ${{ inputs.github_repo_owner }}
     GITHUB_ACTIONS: ${{ inputs.github_actions }}
+  entrypoint: "bash -c"
   args:
     - /bin/fossologyscanner
     - ${{ inputs.scanners }}
